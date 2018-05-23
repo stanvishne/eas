@@ -4,7 +4,7 @@ import Home from './Home';
 import About from './common/About';
 
 const Main = () => (
-    <main>
+    <main className="eas-main">
         <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
