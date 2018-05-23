@@ -6,7 +6,6 @@ const mapStateToProps = state => ({ state });
 
 const Home = ({ state }) => {
     console.log(state);
-
     return (
         <div>
             <Label bsStyle="success">Home</Label>
