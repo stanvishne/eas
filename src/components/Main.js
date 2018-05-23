@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
-import About from './container';
+import About from './common/About';
 
 const Main = () => (
     <main>
