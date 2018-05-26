@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Label from 'react-bootstrap/lib/Label';
+import { Label } from 'react-bootstrap';
 
 const mapStateToProps = state => ({ state });
 
