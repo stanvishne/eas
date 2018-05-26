@@ -1,6 +1,6 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import Menu from './components/common/Menu';
+import Menu from './components/common/SideMenu';
 import Main from './components/Main';
 
 export class App extends React.Component {

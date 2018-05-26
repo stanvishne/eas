@@ -1,14 +1,11 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 
-const Menu = () => {
-    return (
-        <div className="side-bar-menu">
-            <Navbar>
-                <Navbar.Header>
-                    <Navbar.Brand>EASAPR-REACT</Navbar.Brand>
-                </Navbar.Header>
+class Menu extends React.Component {
+    render() {
+        return (
+            <div className="side-bar-menu">
                 <Nav>
                     <IndexLinkContainer to="/">
                         <NavItem>Home</NavItem>
@@ -24,11 +21,20 @@ const Menu = () => {
                         <LinkContainer to="/report2">
                             <MenuItem>Отчет 2</MenuItem>
                         </LinkContainer>
+                        <NavDropdown title="Отчеты" id="basic-nav-dropdown">
+                            <LinkContainer to="/report1">
+                                <MenuItem>Отчет 1</MenuItem>
+                            </LinkContainer>
+                            <MenuItem divider />
+                            <LinkContainer to="/report2">
+                                <MenuItem>Отчет 2</MenuItem>
+                            </LinkContainer>
+                        </NavDropdown>
                     </NavDropdown>
                 </Nav>
-            </Navbar>
-        </div>
-    );
-};
+            </div>
+        );
+    }
+}
 
 export default Menu;
